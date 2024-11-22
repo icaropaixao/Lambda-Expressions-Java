@@ -1,0 +1,47 @@
+
+
+ Resumo da aula
+
+ •Comparatorobjeto de classe separada:
+  - cria uma classe separada só para criar a implementação de comparação
+ public class MyComparator implements Comparator<Product> {
+
+ 	@Override
+ 	public int compare(Product p1, Product p2) {
+ 		return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+ 	}
+ }
+_________________________________________________________________________________
+
+ •Comparatorobjeto de classe anônima:
+ cria uma classe dentro do programa principal para implementar o jeito de comparação
+
+ Comparator<Product> comp = new Comparator<Product>() {
+ 			@Override
+ 			public int compare(Product p1, Product p2) {
+ 				return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+ 			}
+ 		};
+_________________________________________________________________________________
+
+ •Comparatorobjeto de expressão lambda com chaves:
+ faz a implementação da espressão lambda no programa principal com o uso de chaves
+
+ Comparator<Product> comp = (p1, p2) -> {
+ 			return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+ 		};
+
+
+ 		list.sort(comp);
+_________________________________________________________________________________
+
+ •Comparatorobjeto de expressão lambda sem chaves:
+ versão sem usar chaves na expressão lambda
+ Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+
+ 		list.sort(comp);
+_________________________________________________________________________________
+
+ •Comparatorexpressão lambda "direto no argumento":
+ versão da expressão lambda diretamente no argumento que quer comparar
+ list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
