@@ -45,3 +45,5 @@ ________________________________________________________________________________
  •Comparatorexpressão lambda "direto no argumento":
  versão da expressão lambda diretamente no argumento que quer comparar
  list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+
+ Fé, Gratidão e Esperança.
