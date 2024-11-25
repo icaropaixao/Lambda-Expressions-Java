@@ -1,6 +1,6 @@
-package funcao_anonima.introducao.application;
+package lambda.funcao_anonima.introducao.application;
 
-import funcao_anonima.introducao.entities.Product;
+import lambda.funcao_anonima.introducao.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;

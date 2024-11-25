@@ -1,4 +1,4 @@
-package funcao_anonima.introducao.entities;
+package lambda.funcao_anonima.introducao.entities;
 
 public class Product {
     private String name;
