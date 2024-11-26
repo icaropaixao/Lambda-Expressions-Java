@@ -31,7 +31,7 @@ public class FuncoesPrimeiraOrdem {
 
         //            Classe           |   Método
         list.sort(FuncoesPrimeiraOrdem::compareProducts);
-
+        list.forEach(System.out::println);
     }
 
 }
