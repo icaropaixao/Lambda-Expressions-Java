@@ -4,9 +4,9 @@ package lambda.predicate.exercicio.application;
 import lambda.funcao_anonima.introducao.entities.Product;
 import lambda.predicate.exercicio.util.PredicateProduct;
 
-import javax.sql.rowset.Predicate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 // Problema exemplo
  /*
@@ -25,7 +25,9 @@ public class ExemploTeste {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.removeIf(new PredicateProduct());
+        Predicate<Product> pred = p -> p.getPrice() >= 100; // testa os itens que são maiores que 100
+
+        list.removeIf(pred);
 
         for (Product p : list){
             System.out.println(p);
