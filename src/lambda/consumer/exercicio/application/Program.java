@@ -6,6 +6,7 @@ import lambda.funcao_anonima.introducao.entities.Product;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Consumer;
 
 // Problema exemplo
 /*
@@ -23,7 +24,10 @@ public class Program {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-        list.forEach(Product::nonstaticPriceUpdate); // aumentando 10%
+        Double porcentagem = 1.1;
+        Consumer<Product> cons = p -> p.setPrice(p.getPrice() * porcentagem);
+        
+        list.forEach(cons); // aumentando 10%
 
         list.forEach(System.out::println);
 
