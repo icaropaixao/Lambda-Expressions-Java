@@ -6,7 +6,7 @@ import java.util.List;
 
 public class FuncoesPrimeiraOrdem {
 
-    public static int compareProducts(Product p1, Product p2) {=
+    public static int compareProducts(Product p1, Product p2) {
         return p1.getPrice().compareTo(p2.getPrice());
 
     }
