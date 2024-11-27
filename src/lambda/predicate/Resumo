@@ -1,0 +1,9 @@
+O Predicate em Java é um avaliador,
+Interface funcional de grande valor.
+Com o método test, um booleano irá retornar,
+Filtra dados, validações faz aplicar.
+
+Seja em streams ou listas a percorrer,
+Sua lógica é clara, fácil de entender.
+Aceita um argumento, simples de implementar,
+E com lambdas o código vem a clarear.
