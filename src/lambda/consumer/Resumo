@@ -1,0 +1,10 @@
+
+O Consumer em Java é para ação,
+Recebe um argumento e executa a missão.
+Sem retorno algum, ele age no dado,
+Realiza um efeito, seja em lista ou em lado.
+
+Com accept ele age, sem valor devolver,
+Ideal para operações onde não se precisa saber.
+Perfeito para ações, como imprimir ou alterar,
+Tudo sem resposta, só pra o efeito causar.

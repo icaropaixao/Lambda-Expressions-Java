@@ -1,5 +1,5 @@
 package lambda.funcao_anonima.introducao.entities;
-
+import java.text.DecimalFormat;
 public class Product {
     private String name;
     private Double price;
@@ -28,8 +28,14 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Product [name=" + name + ", price=" + price + "]";
+    public static void staticPriceUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.10);
     }
+
+
+    public String toString() {
+        DecimalFormat df = new DecimalFormat("#.00");
+        return "Product [name=" + name + ", price=R$ " + df.format(price) + "]";
+    }
+
 }
