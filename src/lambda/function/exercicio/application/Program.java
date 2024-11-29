@@ -28,6 +28,7 @@ public class Program {
 
 
 
+        // expressão lambda declarada
         Function<Product, String> funcUpperName = p -> p.getName().toUpperCase();
                                                                  // convertendo para lista novamente
         List<String> names = list.stream().map(funcUpperName).collect(Collectors.toList());
