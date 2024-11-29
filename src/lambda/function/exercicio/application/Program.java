@@ -25,8 +25,12 @@ public class Program {
         list.add(new Product("Mouse", 50.00));
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
+
+
+
+        Function<Product, String> funcUpperName = p -> p.getName().toUpperCase();
                                                                  // convertendo para lista novamente
-        List<String> names = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
+        List<String> names = list.stream().map(funcUpperName).collect(Collectors.toList());
 
         names.forEach(System.out::println);
 
