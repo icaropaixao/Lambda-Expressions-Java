@@ -1,4 +1,16 @@
+
+
 A interface Function é ponte que transforma,
 De um tipo a outro, seu fluxo se forma.
 Com apply, ela aplica, transforma e refaz,
 Na lógica funcional, seu poder se faz.
+
+
+ Nota sobre a função map
+
+ •A função "map" (não confunda com a estrutura de dados Map) é uma
+função que aplica uma função a todos elementos de uma stream.
+
+ •Conversões:
+ • Listpara stream: .stream()
+ •Streampara List: .collect(Collectors.toList())
