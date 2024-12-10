@@ -35,11 +35,12 @@ public class Program {
                 line = br.readLine();
             }
 
+            // pegar a média dos preços
             double avg = list.stream()
                     .map(p -> p.getPrice())
                     .reduce(0.0, (x,y) -> x + y) / list.size();
 
-            System.out.println("Average price: " + String.format("%.2f", avg));
+            System.out.println("Média dos preços: " + String.format("%.2f", avg));
 
             Comparator<String> comp = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
 
