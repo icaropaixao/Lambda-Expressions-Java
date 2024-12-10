@@ -25,7 +25,6 @@ public class Program {
         String path = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-
             List<Product> list = new ArrayList<>();
 
             String line = br.readLine();
